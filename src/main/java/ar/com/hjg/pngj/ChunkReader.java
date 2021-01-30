@@ -35,7 +35,7 @@ public abstract class ChunkReader implements IBytesConsumer {
 	private int crcn = 0; // how many bytes have been read from crc
 
 	private boolean crcCheck; // by default, this is false for SKIP, true elsewhere
-	protected ErrorBehaviour errorBehav = ErrorBehaviour.STRICT;
+	protected ErrorBehaviour errorBehav = ErrorBehaviour.LENIENT1_CRC;
 
 	/**
 	 * Modes of ChunkReader chunk processing.
